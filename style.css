@@ -1,0 +1,53 @@
+/* Exemple 1 - Sélecteur d'enfant direct */
+div > p {
+  color: blue;
+}
+
+/* Exemple 2 - Sélecteur de descendant */
+div p {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Exemple 3 - Sélecteur d'élément + élément */
+h2 + p {
+  font-size: 40px;
+  border: 2px solid red;
+}
+
+/* Exemple 4 - Sélecteur d'élément ~ élément */
+ul ~ p {
+  text-decoration: underline;
+  color: brown;
+}
+
+/* Exemple 6 - Sélecteur de plusieurs éléments différents en meme temps */
+h1,
+h2 {
+  color: red;
+}
+
+/* Exemple 7 - Sélecteur d'élément :not() */
+div:not(.special) {
+  border: 1px solid gray;
+}
+
+/* Exemple 8 - Sélecteur d'élément :nth-child() */
+ul li:nth-child(2) {
+  background-color: lightgray;
+}
+
+/* Exemple 9 - Sélecteur d'élément :nth-last-child() */
+ul li:nth-last-child(2) {
+  color: purple;
+}
+
+/* Exemple 10 - Sélecteur d'élément :first-child */
+ul li:first-child {
+  background-color: cadetblue;
+}
+
+/* Exemple 11 - Sélecteur d'élément :last-child */
+ul li:last-child {
+  text-align: right;
+}
